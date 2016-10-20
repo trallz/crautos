@@ -27,7 +27,7 @@ body {
 }
 .menu ul {
   padding: 0;
-  width: 640px;
+  width: 700px;
   margin: 0 auto;
 }
 .menu li {
@@ -38,6 +38,7 @@ body {
 .menu li a {
   padding: 10px;
   text-decoration: none;
+  font-family: 'Roboto Slab', serif;
   color: white;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -54,7 +55,6 @@ body {
 }
 .subcontainer{
   width: 100%;
-  height: 400px;
   background: #f1f1f1;
   display: flex;
   align-items: center;
@@ -75,7 +75,6 @@ body {
   background: white;
 }
 .marca:hover{
-
   background: #F1F1F1;
 }
 .marca:hover img {
@@ -88,19 +87,28 @@ body {
 .marca img{
     width: 30%;
 }
+.marcaVehiculo{
+width: 100%;
+text-align: center;
+}
+.marcaVehiculo img{
+width: 10%;
+margin: 25px;
+}
 .vehiculos{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: justify;
   width: 24%;
   margin: 0.5%;
-  height: 150px;
   background: white;
 }
-.vehiculos h3, .vehiculos h4{
+.vehiculos h3, h4{
   align-items: flex-start;
+  font-family: 'Roboto Slab', serif;
+  margin-left: 20px;
+}
+.vehiculos h4{
+  color: gray;
 }
 .vehiculos img{
-  width: 50%;
+  margin-bottom: 7%;
+  width: 100%;
 }
