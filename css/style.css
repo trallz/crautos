@@ -1,5 +1,12 @@
+.menu li a, .menu li a:hover, .marca:hover img, .marca:hover, .marca img, .marca {
+  transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+}
+
 body {
-    margin: 0;
+    margin: 0 auto;
 }
 .container {
   width: 80%;
@@ -18,9 +25,9 @@ body {
   position: absolute;
   bottom: 0;
 }
-.menu ul{
+.menu ul {
   padding: 0;
-  width: 550px;
+  width: 640px;
   margin: 0 auto;
 }
 .menu li {
@@ -32,13 +39,10 @@ body {
   padding: 10px;
   text-decoration: none;
   color: white;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	-webkit-transition: all 0.5s;
-	-o-transition: all 0.5s;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+
 }
 .menu li a:hover {
     background: white;
@@ -47,10 +51,6 @@ body {
     -moz-border-radius: 7px;
     border-radius: 7px;
     cursor: pointer;
-    transition: all 0.5s;
-	  -moz-transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    -o-transition: all 0.5s;
 }
 .subcontainer{
   width: 100%;
@@ -61,25 +61,45 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
-
 }
 .marca{
   display: flex;
-justify-content: center; 
-align-items: center;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  border: 7px;
   width: 24%;
   margin: 0.5%;
   height: 150px;
   background: white;
 }
+.marca:hover{
+
+  background: #F1F1F1;
+}
+.marca:hover img {
+  -webkit-transform: matrix(1.582,0,0,1.482,0,0);
+  -moz-transform: matrix(1.582,0,0,1.482,0px,0px);
+  -ms-transform: matrix(1.582,0,0,1.482,0,0);
+  -o-transform: matrix(1.582,0,0,1.482,0,0);
+  transform: matrix(1.582,0,0,1.482,0,0);
+}
 .marca img{
     width: 30%;
 }
 .vehiculos{
-  float: left;
-  width: 29.20%;
-  margin: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  width: 24%;
+  margin: 0.5%;
+  height: 150px;
   background: white;
+}
+.vehiculos h3, .vehiculos h4{
+  align-items: flex-start;
 }
 .vehiculos img{
   width: 50%;
