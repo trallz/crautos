@@ -15,7 +15,6 @@ body {
     }
 .header {
   width: 100%;
-  height: 200px;
   background:	#f1f1f1;
   position: relative;
 }
@@ -23,8 +22,6 @@ body {
   width: 100%;
   height: 50px;
   background: #2F4F4F;
-  position: absolute;
-  bottom: 0;
   border-radius: 5px;
   margin-bottom: 25px;
  -moz-border-radius: 5px;
@@ -114,6 +111,7 @@ margin: 25px;
   width: 24%;
   margin: 0.5%;
   background: white;
+  text-decoration: none;
   border-radius: 5px;
  -moz-border-radius: 5px;
  -webkit-border-radius: 5px;
@@ -144,7 +142,7 @@ margin: 25px;
          -webkit-transform:scale(1.2); // Safari and Chrome
          -o-transform:scale(1.2);
 }
-#popup, #popupUno, #popupDos, #popupTres{
+#popup, #popupUno, #popupDos, #popupTres, #popupCuatro, #popupCinco, #popupSeis, #popupSiete{
    visibility: hidden;
    height: 0;
    width: 0;
@@ -152,7 +150,7 @@ margin: 25px;
    margin-top: -300px;
 }
 
-#popup:target, #popupUno:target, #popupDos:target, #popupTres:target{
+#popup:target, #popupUno:target, #popupDos:target, #popupTres:target, #popupCuatro:target, #popupCinco:target, #popupSeis:target, #popupSiete:target{
    visibility:visible;
    height: auto;
    width: auto;
@@ -196,4 +194,29 @@ a.popup-cerrar {
 }
 .popup-contenedor img{
   width: 100%;
+}
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+85% { left: -300%;}
+95% { left: -400%; }
+100% { left: 0%; }
+}
+
+#slider { overflow: hidden;
+height: 320px;}
+#slider figure img { width: 20%; float: left; margin-top: -140px;}
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite;
 }
