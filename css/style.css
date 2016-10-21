@@ -1,4 +1,4 @@
-.menu li a, .menu li a:hover, .marca:hover img, .marca:hover, .marca img, .marca {
+.menu li a, .menu li a:hover, .marca:hover img, .marca:hover, .marca img, .marca, .footer a:hover, .footer a {
   transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
@@ -72,10 +72,8 @@ body {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: white;
-  border: 7px;
-  width: 24%;
-  margin: 0.5%;
+  width: 23%;
+  margin: 1%;
   height: 150px;
   background: white;
   border-radius: 5px;
@@ -219,4 +217,28 @@ height: 320px;}
   text-align: left;
   font-size: 0;
   animation: 30s slidy infinite;
+}
+.footer{
+  width: 96%;
+  height: 150px;
+  padding: 2%;
+  background:	#2F4F4F;
+  -webkit-border-top-left-radius: 5px;
+-webkit-border-top-right-radius: 5px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 5px;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}
+.footer a {
+  float: left;
+  clear: both;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+}
+.footer a:hover {
+  letter-spacing: 2px;
 }
