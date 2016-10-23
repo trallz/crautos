@@ -10,135 +10,160 @@
   <body>
     <div class="container">
       <header class="header">
-        <div class="menu">
-          <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="vehículosNuevos.html">Vehículos Nuevos</a></li>
-            <li><a href="vehículosUsados.html">Vehículos Usados</a></li>
-            <li><a href="bluebook.html">Blue Book</a></li>
-            <li><a href="guias.html">Guías</a></li>
-          </ul>
+        <base href="">
+        <div id="slider">
+         <figure>
+           <img src="img/2.jpg"alt>
+           <img src="img/3.jpg"alt>
+           <img src="img/4.jpg"alt>
+           <img src="img/5.jpg"alt>
+           <img src="img/6.jpg"alt>
+           <img src="img/7.jpg"alt>
+         </figure>
         </div>
-      </header>
-      <div class="subcontainer">
-        <div class="marcaVehiculo">
-          <img src="img/audi.jpg" />
+            <div class="menu">
+              <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="vehículosNuevos.html">Vehículos Nuevos</a></li>
+                <li><a href="vehículosUsados.html">Vehículos Usados</a></li>
+                <li><a href="Busqueda.html">Busqueda</a></li>
+              </ul>
+            </div>
+          </header>
+          <div class="subcontainer">
+            <div class="marcaVehiculo">
+              <img src="img/audi.jpg" />
+            </div>
+            <a href="#popup" class="popup-link vehiculos">
+              <h3>TT</h3>
+              <h4>2014</h4><h4>Precio desde: 23.767,27CRC</h4>
+              <img src="img/audiTT.jpg"/>
+            </a>
+            <a href="#popupUno" class="popup-link vehiculos">
+              <h3>R8</h3>
+              <h4>2015</h4><h4>Precio desde: 69.233,700CRC</h4>
+              <img src="img/audiR8.jpg"/>
+            </a>
+            <a href="#popupDos" class="popup-link vehiculos">
+              <h3>Q7</h3>
+              <h4>2015</h4><h4>Precio desde: 14.927,866CRC</h4>
+              <img src="img/audiQ7.jpg"/>
+            </a>
+            <a href="#popupTres" class="popup-link vehiculos">
+              <h3>Q5</h3>
+              <h4>2008</h4><h4>Precio desde: 19.940,19CRC</h4>
+              <img src="img/audiQ5.jpg"/>
+            </a>
         </div>
-        <a href="#popup" class="popup-link vehiculos">
-          <h3>TT</h3>
-          <h4>2014</h4><h4>Precio desde: 23.767,27CRC</h4>
-          <img src="img/audiTT.jpg"/>
-        </a>
-        <a href="#popupUno" class="popup-link vehiculos">
-          <h3>R8</h3>
-          <h4>2015</h4><h4>Precio desde: 69.233,700CRC</h4>
+        <footer class="footer">
+          <div class="submenufooter">
+            <div class="menu">
+              <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="vehículosNuevos.html">Vehículos Nuevos</a></li>
+                <li><a href="vehículosUsados.html">Vehículos Usados</a></li>
+                <li><a href="Busqueda.html">Busqueda</a></li>
+              </ul>
+            <ul>
+              <li><a href="https://twitter.com/gangrel16" target=""><span class="icon-twitter"></span> Twitter</a></li>
+              <li><a href="https://www.facebook.com/fabio.porras.7" target=""><span class="icon-facebook"></span> facebook</a></li>
+              <li><a href="https://www.instagram.com/tr4llz/" target=""><span class="icon-instagram"></span> Instagram</a></li>
+              <li><span>Contactenos:<br>Llame:(506)2291-4141</span><span>     </span><span>Correo:</span></span> soporte@crautos.com</a></li>
+            </ul>
+            </div>
+          </div>
+        </footer>
+        <div class="modal-wrapper" id="popup">
+        <div class="popup-contenedor">
+           <table>
+             <h3>Audi</h3>
+             <tr>
+             <th>Modelo</th>
+             <th>Transmición</th>
+             <th>Aceleracion</th>
+             <th>Precio</th>
+             <th></th>
+             <tr>
+             <td>TT</td>
+             <td>Manual</td>
+             <td> 0-100 en 9,4 segundos</td>
+             <td>23.767,27 CRC</td>
+             </tr>
+             </tr>
+           </table>
+        <img src="img/audiTT.jpg"/>
+           <a class="popup-cerrar" href="#">X</a>
+        </div>
+        </div>
+        <div class="modal-wrapper" id="popupUno">
+        <div class="popup-contenedor">
+          <table>
+            <h3>Audi</h3>
+            <tr>
+            <th>Modelo</th>
+            <th>Transmición</th>
+            <th>Aceleracion</th>
+            <th>Precio</th>
+            <th></th>
+            <tr>
+            <td>R8</td>
+            <td>Automatico</td>
+            <td> 0-100 en 9,3 segundos</td>
+            <td>69.233,70 CRC</td>
+            </tr>
+            </tr>
+          </table>
           <img src="img/audiR8.jpg"/>
-        </a>
-        <a href="#popupDos" class="popup-link vehiculos">
-          <h3>Q7</h3>
-          <h4>2015</h4><h4>Precio desde: 14.927,866CRC</h4>
-          <img src="img/audiQ7.jpg"/>
-        </a>
-        <a href="#popupTres" class="popup-link vehiculos">
-          <h3>Q5</h3>
-          <h4>2008</h4><h4>Precio desde: 19.940,19CRC</h4>
-          <img src="img/audiQ5.jpg"/>
-        </a>
+           <a class="popup-cerrar" href="#">X</a>
+        </div>
+        </div>
+        <div class="modal-wrapper" id="popupDos">
+        <div class="popup-contenedor">
+          <table>
+            <h3>Audi</h3>
+            <tr>
+            <th>Modelo</th>
+            <th>Transmición</th>
+            <th>Aceleración</th>
+            <th>Precio</th>
+            <th></th>
+            <tr>
+            <td>Q7</td>
+            <td>Manual</td>
+            <td> 0-100 en 8,9 segundos</td>
+            <td>14.927,86 CRC</td>
+            </tr>
+            </tr>
+          </table>
+            <img src="img/audiQ7.jpg"/>
+           <a class="popup-cerrar" href="#">X</a>
+        </div>
+        </div>
+
+        <div class="modal-wrapper" id="popupTres">
+        <div class="popup-contenedor">
+          <table>
+            <h3>Audi</h3>
+            <tr>
+            <th>Modelo</th>
+            <th>Transmición</th>
+            <th>Aceleración</th>
+            <th>Precio</th>
+            <th></th>
+            <tr>
+            <td>Q5</td>
+            <td>Automatico</td>
+            <td> 0-100 en 8,3 segundos</td>
+            <td>119.940,19 CRC</td>
+            </tr>
+            </tr>
+          </table>
+            <img src="img/audiQ5.jpg"/>
+           <a class="popup-cerrar" href="#">X</a>
+        </div>
+        </div>
+        <a href="#popup" class="popup-link"></a>
     </div>
 
-    <div class="modal-wrapper" id="popup">
-    <div class="popup-contenedor">
-       <table>
-         <h3>Audi</h3>
-         <tr>
-         <th>Modelo</th>
-         <th>Transmición</th>
-         <th>Aceleracion</th>
-         <th>Precio</th>
-         <th></th>
-         <tr>
-         <td>TT</td>
-         <td>Manual</td>
-         <td> 0-100 en 9,4 segundos</td>
-         <td>23.767,27 CRC</td>
-         </tr>
-         </tr>
-       </table>
-    <img src="img/audiTT.jpg"/>
-       <a class="popup-cerrar" href="#">X</a>
-    </div>
-    </div>
-
-
-    <div class="modal-wrapper" id="popupUno">
-    <div class="popup-contenedor">
-      <table>
-        <h3>Audi</h3>
-        <tr>
-        <th>Modelo</th>
-        <th>Transmición</th>
-        <th>Aceleracion</th>
-        <th>Precio</th>
-        <th></th>
-        <tr>
-        <td>R8</td>
-        <td>Automatico</td>
-        <td> 0-100 en 9,3 segundos</td>
-        <td>69.233,70 CRC</td>
-        </tr>
-        </tr>
-      </table>
-      <img src="img/audiR8.jpg"/>
-       <a class="popup-cerrar" href="#">X</a>
-    </div>
-    </div>
-
-
-    <div class="modal-wrapper" id="popupDos">
-    <div class="popup-contenedor">
-      <table>
-        <h3>Audi</h3>
-        <tr>
-        <th>Modelo</th>
-        <th>Transmición</th>
-        <th>Aceleración</th>
-        <th>Precio</th>
-        <th></th>
-        <tr>
-        <td>Q7</td>
-        <td>Manual</td>
-        <td> 0-100 en 8,9 segundos</td>
-        <td>14.927,86 CRC</td>
-        </tr>
-        </tr>
-      </table>
-        <img src="img/audiQ7.jpg"/>
-       <a class="popup-cerrar" href="#">X</a>
-    </div>
-    </div>
-
-    <div class="modal-wrapper" id="popupTres">
-    <div class="popup-contenedor">
-      <table>
-        <h3>Audi</h3>
-        <tr>
-        <th>Modelo</th>
-        <th>Transmición</th>
-        <th>Aceleración</th>
-        <th>Precio</th>
-        <th></th>
-        <tr>
-        <td>Q5</td>
-        <td>Automatico</td>
-        <td> 0-100 en 8,3 segundos</td>
-        <td>119.940,19 CRC</td>
-        </tr>
-        </tr>
-      </table>
-        <img src="img/audiQ5.jpg"/>
-       <a class="popup-cerrar" href="#">X</a>
-    </div>
-    </div>
-    <a href="#popup" class="popup-link"></a>
   </body>
 </html>

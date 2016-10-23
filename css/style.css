@@ -33,7 +33,10 @@
 .icon-twitter:before {
   content: "\ea96";
 }
-.menu li a, .menu li a:hover, .marca:hover img, .marca:hover, .marca img, .marca, .footer a:hover, .footer a {
+.icon-envelop:before {
+    content: "\ea96";
+    }
+.menu li a, .menu li a:hover, .marca:hover img, .marca:hover, .marca img, .marca, .footer a:hover, .footer a, .vehiculos, .vehiculos:hover {
   transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
@@ -74,9 +77,10 @@ body {
   display: inline-block;
   list-style: none;
   margin: 15px;
+  padding-left: 30px;
 }
 .menu li a {
-  padding: 10px;
+  padding: 7px;
   text-decoration: none;
   font-family: 'Roboto Slab', serif;
   color: white;
@@ -92,6 +96,7 @@ body {
     -moz-border-radius: 7px;
     border-radius: 7px;
     cursor: pointer;
+    letter-spacing: 1px;
 }
 .subcontainer{
   width: 100%;
@@ -254,26 +259,170 @@ height: 320px;}
   animation: 30s slidy infinite;
 }
 .footer{
-  width: 96%;
-  height: 150px;
-  padding: 2%;
-  background:	#2F4F4F;
-  -webkit-border-top-left-radius: 5px;
+  width: 100%;
+  background: #f1f1f1;
+  position: relative;
+}
+.footer ul{
+  padding: 0;
+  width: 700px;
+  margin: 0 auto;
+}
+.footer li{
+  display: inline-block;
+  list-style: none;
+  margin: 15px;
+  padding-left: 25px;
+}
+.footer li a{
+  padding: 7px;
+  text-decoration: none;
+  font-family: 'Roboto Slab', serif;
+  color: white;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.footer ul li a:hover{
+  background: white;
+  color: black;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.submenufooter{
+  width: 100%;
+height: 200px;
+background: #2F4F4F;
+margin-top: 2%;
+-webkit-border-top-left-radius: 5px;
 -webkit-border-top-right-radius: 5px;
 -moz-border-radius-topleft: 5px;
 -moz-border-radius-topright: 5px;
 border-top-left-radius: 5px;
 border-top-right-radius: 5px;
 }
-.footer a {
-  float: left;
-  clear: both;
-  color: #fff;
-  text-decoration: none;
-  padding: 20px;
-  font-family: 'Roboto Slab', serif;
-  font-size: 18px;
+.navegador-vehiculos{
+  background: #2F4F4F;
+border-radius: 10px;
+padding: 15px 10px 20px;
+margin-bottom: 25px;
 }
-.footer a:hover {
-  letter-spacing: 2px;
+.navegador-vehiculos h3{
+  align-items: flex-start;
+  font-family: 'Roboto Slab', serif;
+  margin-left: 20px;
+}
+.nav-vehiculos{
+  background: #2F4F4F;
+  border-radius: 10px;
+  padding: 15px 10px 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 1px 1px 1px
+}
+.clearfix::after{
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0
+  -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+#nav-vehiculos select{
+      width: 298px;
+}
+#nav-vehiculos select{
+  display: inline-block;
+    vertical-align: top;
+}
+#main_content select{
+  font-size: 14px;
+border: 2px solid #ccc;
+border-radius: 5px;
+color: #1a1a1a;
+padding: 10px 55px 10px 10px;
+margin: 10px 0;
+text-indent: .01px;
+transition: background-color .2s;
+}
+#main_content input[type=submit]{
+  font-size: 15px;
+color: #fff;
+border-radius: 5px;
+margin: 10px 0;
+padding: 10px 30px;
+background: #ccc;
+  width: auto;
+  transition: all .2s;
+  border: 0;
+}
+#main_content button, input, select, textarea{
+      font-family: inherit;
+}
+#nav-vehiculos::after{
+  display: inline-block;
+  vertical-align: top;
+}
+#nav-vehiculos::before, *:after{
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+#nav-vehiculos.clearfix::after{
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.navegador-vehiculos::before, *:after{
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+.select{
+  border: 1px solid #ccc;
+  width: 140px;
+  overflow: hidden;
+}
+.form-select{
+  padding-right: 300px;
+  margin-right: 1%;
+  width: 100px;
+  background: #2f4f4f;
+  overflow: hidden
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px 1px;
+  color:#f1f1f1;
+  border-width:thin;
+  border-style:solid;
+  border-color:#f1f1f1;
+  width:70px;
+  height:30px;
+  font-size:12pt;
+  font-family:Helvetica;
+  font-weight:bold;
+}
+.form-submit{
+    padding: 8px;
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.value{
+  padding: 7px;
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
 }
